@@ -12,14 +12,8 @@ public class Lab03c
 {
 	public static void main( String[] args )
    {
-		
-	
-	
    	//add test cases
    	Quadratic test = new Quadratic();
-   	
-
-   	
    	test.setEquation(1, 6, 9);
    	test.calcRoots();
    	test.print();

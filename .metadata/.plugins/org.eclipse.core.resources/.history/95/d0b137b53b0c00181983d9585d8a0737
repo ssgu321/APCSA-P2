@@ -42,7 +42,7 @@ public class Distance
 
 	public void print( )
 	{
-		System.out.printf("The distance is :: %.2f \n\n", distance);
+		System.out.printf("The distance is :: %.2f", distance);
 
 
 	}
