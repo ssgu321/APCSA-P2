@@ -55,11 +55,7 @@ public class Magpie4
 		}
 		else if(findKeyword(statement, "I want", 0 ) >= 0)
 		{
-			response = transformIWant( statement);
-		}
-		else if(findKeyword(statement, "I", 0) == 0 && findKeyword(statement, "you", 0) >= 0)
-		{
-			response = transformIYou(statement);
+			//add later
 		}
 
 		else
@@ -131,27 +127,6 @@ public class Magpie4
 	}
 	
 	
-	private String transformIWant(String statement)
-	{
-		String lastChar = statement.substring(statement
-				.length() - 1);
-		if (lastChar.equals("."))
-		{
-			statement = statement.substring(0, statement
-					.length() - 1);
-		}
-		String object = statement.substring(7);
-		
-		return "Would you really be happy if you had " + object + "?";
-	}
-	
-	private String transformIYou(String statement)
-	{
-		int endLetter = statement.indexOf("you");
-		String verb = statement.substring(2, endLetter);
-		
-		return "Why do you " + verb + "me?";
-	}
 
 	
 	
@@ -264,6 +239,5 @@ public class Magpie4
 
 		return response;
 	}
-	
-	
+
 }

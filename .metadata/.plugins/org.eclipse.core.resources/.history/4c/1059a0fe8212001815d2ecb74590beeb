@@ -150,7 +150,7 @@ public class Magpie4
 		int endLetter = statement.indexOf("you");
 		String verb = statement.substring(2, endLetter);
 		
-		return "Why do you " + verb + "me?";
+		return "Why do you " + verb + " me?";
 	}
 
 	
