@@ -1,0 +1,29 @@
+public class Numbers 
+{
+	private static int ones, tens;
+	public static void main (String[] args)
+	{
+		
+		ones = 12 % 10;
+		tens = 26 / 10;
+		
+		System.out.println(isGoofy(346));
+	}
+	
+	public static int  isGoofy(int num)
+	{
+		ones = num % 10;
+		tens = num / 10;
+		int length = 0;
+		
+		for (int i = 1; num / i > 1; i *= 10 )
+		{
+			length++;
+		}
+		
+		
+		
+		
+		return length; 
+	}
+}

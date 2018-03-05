@@ -1,0 +1,30 @@
+public class Numbers 
+{
+
+	public static void main (String[] args)
+	{
+		
+
+		System.out.println(1234 / 10 % 10);
+	}
+	
+	public static boolean  isGoofy(int num)
+	{
+		int length = 0;
+		
+		for (int i = 1; num / i > 1; i *= 10 )
+		{
+			length++;
+		}
+		
+		for (int k = 0; k < length; k++)
+		{
+			
+		}
+		
+		
+		
+		
+		return false; 
+	}
+}

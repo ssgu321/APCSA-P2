@@ -1,0 +1,46 @@
+public class Numbers 
+{
+
+	public static void main (String[] args)
+	{
+		
+
+		//System.out.println(isGoofy(12));
+	}
+	
+	public boolean boolean  isGoofy(int num)
+	{
+		int length = 0, sum = 0;
+		String output;
+		for (int i = 1; num / i > 1; i *= 10 )
+		{
+			length++;
+		}
+		
+		for (int k = 0; k < length; k++)
+		{
+			int divisor = 1;
+			int digit = (num / divisor) % 10;
+			if (num % digit == 0)
+			{
+				sum += digit;
+				output += digit + "\t";
+				System.out.println(output);
+			}
+			
+			
+			divisor *= 10;
+		
+		}
+		
+		if (sum % 2 == 0)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	
+	}
+}
