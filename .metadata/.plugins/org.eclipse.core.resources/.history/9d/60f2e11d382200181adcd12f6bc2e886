@@ -38,7 +38,7 @@ public class MadLib
 		try{
 			Scanner file = new Scanner(new File(fileName));
 			sentence = file.nextLine();		
-			
+			System.out.println(sentence);
 		
 		}
 		catch(Exception e)
@@ -115,7 +115,7 @@ public class MadLib
 		int size = nouns.size();
 		int randNouns = (int)(size * Math.random());
 		
-		return nouns.get(randNouns);
+		return verbs.get(randNouns);
 	}
 	
 	public String getRandomAdjective()
@@ -123,37 +123,21 @@ public class MadLib
 		int size = adjectives.size();
 		int randAdj= (int)(size * Math.random());
 		
-		return adjectives.get(randAdj);
+		return verbs.get(randAdj);
 	}		
 
 	public String toString()
 	{
 		int size = sentence.length();
-		
 		for (int i = 0; i < size; i++)
 		{
-			if (sentence.substring(i, i + 1).equals("#"))
-			{				
+			if (sentence.substring(i, i + 1) == "#")
+			{
 				sentence = sentence.substring(0, i) + getRandomNoun() + sentence.substring(i + 1);
 				size = sentence.length();
 			}
 		}
-		for (int i = 0; i < size; i++)
-		{
-			if (sentence.substring(i, i + 1).equals("@"))
-			{				
-				sentence = sentence.substring(0, i) + getRandomVerb() + sentence.substring(i + 1);
-				size = sentence.length();
-			}
-		}
-		for (int i = 0; i < size; i++)
-		{
-			if (sentence.substring(i, i + 1).equals("&"))
-			{				
-				sentence = sentence.substring(0, i) + getRandomAdjective() + sentence.substring(i + 1);
-				size = sentence.length();
-			}
-		}
+		
 		
 	   return sentence;
 	}
