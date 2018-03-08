@@ -43,8 +43,6 @@ public class Histogram
 	{
 		Scanner scan = new Scanner(fileName);
 		int num;
-		
-		
 		for (int i = 0; i < letters.size(); i++)
 		{
 			num = 0; 

@@ -43,8 +43,6 @@ public class Histogram
 	{
 		Scanner scan = new Scanner(fileName);
 		int num;
-		
-		
 		for (int i = 0; i < letters.size(); i++)
 		{
 			num = 0; 
@@ -53,10 +51,9 @@ public class Histogram
 				if(fileName.charAt(j) == letters.get(i))
 				{
 					num++;
-					System.out.println(j);
-				}				
+				}
+				count.add(i, num);
 			}
-			count.add(i, num);
 		}
 
 	}
@@ -73,7 +70,7 @@ public class Histogram
 		while (!t)
 		{
 			spot++;
-			if (count.get(spot) == highest)
+			if (count.get(0) == highest)
 			{
 				t = true;
 			}
@@ -95,13 +92,13 @@ public class Histogram
 		while (!t)
 		{
 			spot++;
-			if (count.get(spot) == least)
+			if (count.get(0) == least)
 			{
 				t = true;
 			}
 			
 		}
-		return letters.get(spot);
+		return letters.get(least);
 
 		
 	}

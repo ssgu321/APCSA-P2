@@ -42,68 +42,24 @@ public class Histogram
 	public void loadAndAnalyzeFile() throws IOException
 	{
 		Scanner scan = new Scanner(fileName);
-		int num;
 		
-		
-		for (int i = 0; i < letters.size(); i++)
-		{
-			num = 0; 
-			for (int j = 0; j < fileName.length(); j++)
-			{
-				if(fileName.charAt(j) == letters.get(i))
-				{
-					num++;
-					System.out.println(j);
-				}				
-			}
-			count.add(i, num);
-		}
+
+
+
 
 	}
 
 	public char mostFrequent()
 	{
-		int highest = 0, size = letters.size(); 
-		for (int i = 0; i < count.size(); i++)
-		{
-			highest = Math.max(highest, count.get(i));
-		}
-		boolean t = false; 
-		int spot = -1; 
-		while (!t)
-		{
-			spot++;
-			if (count.get(spot) == highest)
-			{
-				t = true;
-			}
-			
-		}
-			
-		return letters.get(spot);
+
+		return '#';
 	}
 
 	public char leastFrequent()
 	{
-		int least = 100, size = letters.size(); 
-		for (int i = 0; i < count.size(); i++)
-		{
-			least = Math.min(least, count.get(i));
-		}
-		boolean t = false; 
-		int spot = -1; 
-		while (!t)
-		{
-			spot++;
-			if (count.get(spot) == least)
-			{
-				t = true;
-			}
-			
-		}
-		return letters.get(spot);
 
-		
+
+		return '#';
 	}
 
 	public String toString()
