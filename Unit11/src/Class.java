@@ -125,7 +125,7 @@ public class Class
 		String output="";
 		for (int i = 0; i < studentList.length; i++)
 		{
-			if (studentList[i].getAverage() < 60.0)
+			if (studentList[i].getAverage() < failingGrade)
 			{
 				output += studentList[i].getName() + "  ";
 			}
