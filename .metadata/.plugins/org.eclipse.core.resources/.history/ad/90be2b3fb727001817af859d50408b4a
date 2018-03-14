@@ -20,18 +20,17 @@ public class GradeBookFileRunner
 		
 		String classname = file.nextLine();
 		int number = file.nextInt();
-		file.nextLine();
 		Class test = new Class(classname, number);
 		
 		String name, gradelist;
-		
+		file.nextLine();
 		
 		for (int i = 0; i < number; i++)
 		{
 			name = file.nextLine();				
 			gradelist = file.nextLine();		
 
-			test.addStudent(i,new Student(name, gradelist));
+			test.addStudent(new Student(name, gradelist));
 		}
 
 		
@@ -40,6 +39,7 @@ public class GradeBookFileRunner
 		
 		test.sort();
 		out.println(test);
+		
 		out.println("Failure List = " + test.getFailureList(70));	
 		out.println("Highest Average = " + test.getStudentWithHighestAverage());
 		out.println("Lowest Average = " + test.getStudentWithLowestAverage());

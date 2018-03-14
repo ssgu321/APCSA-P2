@@ -30,9 +30,9 @@ public class Class
 	
 	}
 	
-	public void addStudent(int stuNum, Student s)
+	public void addStudent(Student s)
 	{
-		studentList.add(stuNum, s);
+		studentList.add(s);
 
 	}
 	
