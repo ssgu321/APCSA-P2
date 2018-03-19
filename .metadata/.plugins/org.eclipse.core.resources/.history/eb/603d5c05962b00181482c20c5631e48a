@@ -1,0 +1,49 @@
+package Lab18d;
+
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class -
+//Lab  -
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import static java.lang.System.*;
+
+public class Lab18d
+{
+	public static void main( String args[] ) throws IOException
+	{
+		ArrayList<String> unsorted = new ArrayList<String>();
+		ArrayList<String> sorted = new ArrayList<String>();
+		
+		Scanner file = new Scanner(new File("H:\\APCS\\Unit12-2016\\Unit12-Assignments\\lab18d\\lab18d.dat"));
+
+		int size = file.nextInt();
+		
+		while(file.hasNext())
+		{
+			unsorted.add(file.nextLine());
+		}
+		out.print(unsorted.size());
+		
+		
+		for (int i = 0; i < size; i++)
+		{
+			
+		}
+
+
+
+
+
+
+
+
+
+
+	}
+}
