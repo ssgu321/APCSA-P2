@@ -30,7 +30,6 @@ public class Maze
 				maze[i][j] = (int)line.charAt((size * i + j));
 			}
 		}
-		
 
 	}
 
