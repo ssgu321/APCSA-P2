@@ -16,10 +16,29 @@ public class Lab21i
 		
 		Scanner file = new Scanner(new File("C:\\Users\\gus1430\\Desktop\\APCSA-P2\\Unit14\\src\\lab21i.dat"));
 		
-		while (file.hasNextLine())
-		{		
-			Maze test = new Maze(file.nextInt(), file.nextLine());
+
+			int size = file.nextInt();
+			file.nextLine();
+			String line = file.nextLine();
+			line = line.replaceAll(" ", "");
+			Maze test = new Maze(size, line);
+			test.hasExitPath(0, 0);
 			out.println(test);
-		} 
+			out.println();
+			
+			while (file.hasNext())
+			{
+				size = file.nextInt();
+				file.nextLine();
+				line = file.nextLine();
+				line = line.replaceAll(" ", "");
+				test = new Maze(size, line);
+				test.hasExitPath(0, 0);
+				out.println(test);
+				out.println();
+			}
+			
+			
+		
 	}
 }

@@ -14,7 +14,7 @@ public class Lab24d
 	public static void main( String args[] ) throws IOException
 	{
 		Scanner file = new Scanner (new File("Lab24d.dat"));
-
+		
 
 
 

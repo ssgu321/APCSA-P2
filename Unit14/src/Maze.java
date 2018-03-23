@@ -23,11 +23,12 @@ public class Maze
 	public Maze(int size, String line)
 	{
 		maze = new int[size][size];
+		Scanner file = new Scanner (line);
 		for (int i = 0; i < size; i++)
 		{
 			for (int j = 0; j < size;  j++)
 			{
-				maze[i][j] = (int)line.charAt((size * i + j));
+				maze[i][j] = Integer.valueOf(String.valueOf(line.charAt((i * size) + j )));
 			}
 		}
 		
@@ -44,13 +45,14 @@ public class Maze
 				exitFound = true;
 			}
 			else if (maze[r][c] == 1)
-			{
-				maze[r][c] = 2;
+			{ 
+				int save = maze[r][c];
+				maze[r][c] = 0;
 				hasExitPath(r, c + 1);
-				hasExitPath(r, c - 1);	
+				hasExitPath(r, c - 1);
 				hasExitPath(r + 1, c);
-				hasExitPath(r - 1, c);
-				maze[r][c] = 1;
+				hasExitPath(r - 1, c);			
+				maze[r][c] = save;
 			}
 		}
 
@@ -63,11 +65,14 @@ public class Maze
 		{
 			for (int j = 0; j < maze[i].length; j++)
 			{
-				output += maze[i][j];
+				output += String.valueOf(maze[i][j]);
 			}
 			output += "\n";
 		}
-
-		return output;
+		if (exitFound)
+		{
+			return output += "exit found";
+		}
+		return output + "exit not found";
 	}
 }
