@@ -15,11 +15,7 @@ public class Lab15d
 {
 	public static void main( String args[] ) throws IOException
 	{
-		//read in file
-		//int size = file.nextInt();
-		
-		//file.nextLine();
-		//for(int i = )
+
 
 
 

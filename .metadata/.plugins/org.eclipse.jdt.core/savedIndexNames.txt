@@ -14,7 +14,6 @@ INDEX VERSION 1.130+C:\Users\gus1430\Desktop\APCSA-P2\.metadata\.plugins\org.ecl
 4127867854.index
 465064559.index
 1903552300.index
-1862472308.index
 2430934472.index
 2165142360.index
 2530069035.index
