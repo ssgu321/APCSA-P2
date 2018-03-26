@@ -13,22 +13,22 @@ public class Lab21g
 		//instantiate an AtCounter
 		AtCounter test = new AtCounter();
 		test.countAts(0,0);
-		out.println(test);
+		out.println("0 0 has " + test);
 		
 		AtCounter test1 = new AtCounter();
 		test1.countAts(2,5);
-		out.println(test1);
+		out.println("2 5 has " + test1);
 		
 		AtCounter test2 = new AtCounter();
 		test2.countAts(5,0);
-		out.println(test2);
+		out.println("5 0 has " + test2);
 		
 		AtCounter test3 = new AtCounter();
 		test3.countAts(9,9);
-		out.println(test3);
+		out.println("9 9 has " + test3);
 		
 		AtCounter test4 = new AtCounter();
 		test4.countAts(3,9);
-		out.println(test4);
+		out.println("3 9 has " + test4);
 	}
 }
