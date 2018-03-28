@@ -18,7 +18,7 @@ public class Lab22c
 		out.println("adding tommy");
 		test.add("tommy");
 		out.println("adding bobby");
-		test.add("bobby");
+		test.add("bobby");	
 		out.println("printing the list ::  "+test+"\n\n");
 		out.println("removing bobby");
 		test.remove("bobby");
@@ -37,6 +37,6 @@ public class Lab22c
 		out.println("printing the list ::  "+test+"\n\n");		
 		out.println("removing fred");
 		test.remove("fred");  		
-		out.println("printing the list ::  "+test+"\n\n");				
+		out.println("printing the list ::  "+test+"\n\n");	
 	}
 }

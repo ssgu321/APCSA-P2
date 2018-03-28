@@ -13,7 +13,8 @@ public class QuickSort
 
 	public static void quickSort(Comparable[] list)
 	{
-
+		passCount = 0;
+		quickSort(list, 0, list.length - 1);
 
 
 
@@ -23,7 +24,11 @@ public class QuickSort
 	private static void quickSort(Comparable[] list, int low, int high)
 	{
 
-
+		if (low < high){
+			int p = partition(list, low, high);
+			quickSort(list, low, p);
+			quickSort(list, p+1, high);
+		}
 
 
 
