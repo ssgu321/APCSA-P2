@@ -15,6 +15,9 @@ public class QuickSort
 	{
 		passCount = 0;
 		quickSort(list, 0, list.length - 1);
+
+
+
 	}
 
 
@@ -28,18 +31,16 @@ public class QuickSort
 		}
 
 
+
+
+
 	}
 
 
 	private static int partition(Comparable[] list, int low, int high)
 	{
-		Comparable pivot = list[0];
-		int bot = low - 1;
-		int top = high + 1;
 
-		while (bot < top){
-			
-		}
+
 
 
 
