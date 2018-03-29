@@ -53,6 +53,6 @@ public class QuickSort
 			}
 		}
 
-		return 0;
+		return top;
 	}
 }
