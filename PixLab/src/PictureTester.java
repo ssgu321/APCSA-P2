@@ -123,6 +123,17 @@ public class PictureTester
 	  oc.fixUnderwater();
 	  oc.explore();
   }
+  
+  public static void testBlur(int x, int y, int w, int h, int n)
+  {
+     Picture redMoto = new Picture("redMotorcycle.jpg");
+     redMoto.explore();
+     for (int i = 0; i<n; i++){
+        redMoto.blur(x,y,w,h);
+      }
+      redMoto.explore();
+  }
+ 
  
   
   /** Main method for testing.  Every class can have a main
@@ -144,7 +155,7 @@ public class PictureTester
 	//testMirrorHorizontal();
 	//testMirrorHorizontalBotToTop();
     //testMirrorTemple();
-    testMirrorArms();
+    //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
@@ -157,5 +168,6 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+    testBlur(190,160,20,20,1); 
   }
 }

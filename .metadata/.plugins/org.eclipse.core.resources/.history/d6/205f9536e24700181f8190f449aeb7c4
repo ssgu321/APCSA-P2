@@ -1,0 +1,33 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class - 
+//Lab  -
+
+import static java.lang.System.*;
+
+import java.util.ArrayList;
+
+public class Lab11j
+{
+   public static void main(String args[])
+   {
+	   Triples test = new Triples();
+	   test.setNum(110);
+	   out.println(test.toString());	
+	   
+	   ArrayList<String> words = new ArrayList<String>();
+	   words.add("hello");
+	   words.add("by");
+
+	   words.add("as");
+	   words.add("hawello");
+	   out.println(words.size());
+	   words.remove(2);
+	   out.println(words.size());
+
+
+
+	   
+   } 
+}
